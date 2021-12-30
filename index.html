@@ -12,23 +12,41 @@
     <title>The Number Game</title>
 </head>
 <body>
+<!-- Main container -->
 <div class="container">
+
+    <!-- Header -->
     <div class="header">
+
+        <!-- Title & author credits -->
         <h1>The Number Game</h1>
         <p id="author">by <a href="https://www.github.com/Risclover" target="_blank">Risclover</a></p>
+        
+        <!-- Welcome message and instructions -->
         <div class="instructions">
             <p>Welcome to The Number Game! Try to correctly guess the computer's number, which is between 1 and 100, in the least amount of guesses as you can.</p>
             <p>Please note that guessing the same number more than once will <em>not</em> increase your guess count.</p>
+
+            <!-- Keyboard shortcuts key -->
+            <p class="shortcut"><strong>Keyboard Shortcuts</strong></p>
+            <ul>
+                <li><strong>Guess:</strong> <code>Enter</code></li>
+                <li><strong>Reset:</strong> <code>d</code></li>
+            </ul>
         </div>
     </div>
+
+    <!-- The game div -->
     <div class="main regback" id="main">
         <label for="box">Enter a number between 1 and 100:</label>
         <input type="text" name="box" id="input">
         <div class="buttoncontainer">
-            <button id="submit" onclick="playRound()" class="submit">Guess</button>
-            <button id="reset" onclick="refreshPage()" class="reset">Reset</button>
+            <button id="submit" onclick="playRound()" class="submit">Guess <span class="shortcut">(Enter)</span></button>
+            <button id="reset" onclick="refreshPage()" class="reset">Reset (d)</button>
         </div>
         <div class="undergame">
+
+            <!-- Key codes (so user knows what color means what) -->
             <div class="key">
                 <h4>Color Key:</h4>
                 <ul>

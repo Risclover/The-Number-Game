@@ -15,7 +15,26 @@ let unique = [];
 
 function onlyUnique(value, index, self) {
     return self.indexOf(value) === index;
+  }z
+
+  // Get the input field
+// Execute a function when the user releases a key on the keyboard
+guess.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.code === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    submit.click();
   }
+});
+
+document.addEventListener("keydown", function(event){
+    if(event.key === "d"){
+      reset.click();
+    } 
+ });
+ 
 
 function playRound() {
     let userGuess = guess.value;

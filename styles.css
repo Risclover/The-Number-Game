@@ -13,7 +13,9 @@ body, html {
     padding-top: 20px;
 }
 
-
+.shortcut {
+    font-size: 10px;
+}
 
 #author {
     margin-bottom: 20px;
