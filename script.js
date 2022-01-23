@@ -15,7 +15,7 @@ let unique = [];
 
 function onlyUnique(value, index, self) {
     return self.indexOf(value) === index;
-  }z
+}
 
   // Get the input field
 // Execute a function when the user releases a key on the keyboard

@@ -26,13 +26,6 @@
         <div class="instructions">
             <p>Welcome to The Number Game! Try to correctly guess the computer's number, which is between 1 and 100, in the least amount of guesses as you can.</p>
             <p>Please note that guessing the same number more than once will <em>not</em> increase your guess count.</p>
-
-            <!-- Keyboard shortcuts key -->
-            <p class="shortcut"><strong>Keyboard Shortcuts</strong></p>
-            <ul>
-                <li><strong>Guess:</strong> <code>Enter</code></li>
-                <li><strong>Reset:</strong> <code>d</code></li>
-            </ul>
         </div>
     </div>
 
@@ -41,8 +34,12 @@
         <label for="box">Enter a number between 1 and 100:</label>
         <input type="text" name="box" id="input">
         <div class="buttoncontainer">
-            <button id="submit" onclick="playRound()" class="submit">Guess <span class="shortcut">(Enter)</span></button>
-            <button id="reset" onclick="refreshPage()" class="reset">Reset (d)</button>
+            <div class="buttoncontainer2">
+            <button id="submit" onclick="playRound()" class="submit">Guess</span></button>
+            </div>
+            <div class="buttoncontainer2">
+            <button id="reset" onclick="refreshPage()" class="reset">Reset</button>
+            </div>
         </div>
         <div class="undergame">
 
@@ -64,6 +61,13 @@
                 <p id="counting"></p>
             </div>
         </div>
+    </div>
+    <!-- Keyboard shortcuts key -->
+    <div class="keyboardshorts">
+        <img src="enter.png" class="keyicone">
+        <p class="guesslabel"><strong>Guess</strong></p>
+        <img src="testing.png" class="keyicond">
+        <p class="resetlabel"><strong>Reset</strong></p>
     </div>
 </div>    
 </body>
