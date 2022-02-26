@@ -5,7 +5,7 @@
 1. [Introduction](#Introduction) (You are here)
 2. [Description](#Description)
 3. [Updates](#Updates)
-4. [Build]](#Build)
+4. [Build](#Build)
 5. [Links](#Links)
 
 ## Description
