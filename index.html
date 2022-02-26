@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>The Number Game</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 <body>
 <!-- Main container -->
@@ -24,7 +26,7 @@
         
         <!-- Welcome message and instructions -->
         <div class="instructions">
-            <p>Welcome to The Number Game! Try to correctly guess the computer's number, which is between 1 and 100, in the least amount of guesses as you can.</p>
+            <p>Welcome to The Number Game! Try to correctly guess the computer's number, which is between 0 and 100 (including both 0 and 100), in the least amount of guesses as you can.</p>
             <p>Please note that guessing the same number more than once will <em>not</em> increase your guess count.</p>
         </div>
     </div>
@@ -35,15 +37,15 @@
         <input type="text" name="box" id="input">
         <div class="buttoncontainer">
             <div class="buttoncontainer2">
-            <button id="submit" onclick="playRound()" class="submit">Guess</span></button>
+            <button id="submit" class="submit">Guess</span></button>
             </div>
             <div class="buttoncontainer2">
-            <button id="reset" onclick="refreshPage()" class="reset">Reset</button>
+            <button id="reset" class="reset">Reset</button>
             </div>
         </div>
         <div class="undergame">
 
-            <!-- Key codes (so user knows what color means what) -->
+            <!-- Key kbds (so user knows what color means what) -->
             <div class="key">
                 <h4>Color Key:</h4>
                 <ul>
@@ -63,13 +65,12 @@
         </div>
     </div>
     <!-- Keyboard shortcuts key -->
+
     <div class="keyboardshorts">
-        <img src="enter.png" class="keyicone">
-        <p class="guesslabel"><strong>Guess</strong></p>
-        <img src="testing.png" class="keyicond">
-        <p class="resetlabel"><strong>Reset</strong></p>
+        <p class="guesslabel"><strong>Guess:</strong> <kbd>Enter</kbd> / </p> 
+        <p class="resetlabel"><strong>Reset:</strong> <kbd>Shift + R</kbd></p>
     </div>
 </div>    
 </body>
-<script src="script.js"></script>
+<script src="script2.js"></script>
 </html>

@@ -21,7 +21,7 @@ function onlyUnique(value, index, self) {
 // Execute a function when the user releases a key on the keyboard
 guess.addEventListener("keyup", function(event) {
   // Number 13 is the "Enter" key on the keyboard
-  if (event.key === "Enter") {
+  if (event.code === "Enter") {
     // Cancel the default action, if needed
     event.preventDefault();
     // Trigger the button element with a click
@@ -29,8 +29,8 @@ guess.addEventListener("keyup", function(event) {
   }
 });
 
-document.addEventListener("keydown", function(event){
-    if(event.key === "r"){
+document.addEventListener("keydown", function(e){
+    if(e.shiftKey && e.key === "R") {
       reset.click();
     } 
  });
@@ -45,6 +45,7 @@ function playRound() {
     if (userGuess < number && userGuess > 0) {
         guesses.push(userGuess);
         result.classList.remove('high');
+        result.classList.remove('error');
         result.textContent = "Your guess was too low! Try again."
         result.classList.add('low');
         newNum = document.createElement('span');
@@ -66,6 +67,7 @@ function playRound() {
     } else if (userGuess > number && userGuess >= 0 && userGuess < 101) {
         guesses.push(userGuess);
         result.classList.remove('low');
+        result.classList.remove('error');
         result.textContent = "Your guess was too high! Try again."
         result.classList.add('high');
         newNum = document.createElement('span');
@@ -109,8 +111,11 @@ function playRound() {
         reset.classList.remove('btnbackhigh');
         submit.classList.add('btnbackwin');
         reset.classList.add('btnbackwin');
-    } else if (userGuess < 0 || userGuess > 100 || userGuess === '') {
-        result.textContent = "Please enter a number from 1 - 100."
+    } else if (userGuess < 0 || userGuess > 100 || userGuess === '' || userGuess != (/\d+/ig)) {
+        result.textContent = "Please enter a number from 0 - 100."
+        result.classList.add('error');
+        result.classList.remove('low');
+        result.classList.remove('high');
         background.classList.remove('regback');
         background.classList.remove('lowback');
         background.classList.remove('highback');
