@@ -1,8 +1,8 @@
-# The Number Game
+# Introduction
  A numbers guessing game
 
 ### Table of Contents
-1. [The Number Game](#The Number Game) (You are here)
+1. [Introduction](#Introduction) (You are here)
 2. [Description](#Description)
 3. [Updates](#Updates)
 4. [Building This Project](#Building This Project)
