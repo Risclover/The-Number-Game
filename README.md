@@ -1,7 +1,14 @@
 # Numbers-Game
  A numbers guessing game
 
-## Description
+### Table of Contents
+1. [The Number Game - Introdction](#Numbers Game) (You are here)
+2. [Description](#Description)
+3. [Updates](#Updates)
+4. [Building This Project](#Building This Project)
+5. [Links](#Links)
+
+## 1. Description
 A game in which the player tries to guess the number - which is randomly chosen from 1 - 100 at the start of each game - in the least number of guesses possible.
 
 ## Updates
@@ -10,7 +17,7 @@ A game in which the player tries to guess the number - which is randomly chosen 
 - **02/25/2022**: I've once again returned to this project, this time to write a "Project Breakdown" blog post for the [aforementioned portfolio](https://risclvoer.github.io/The-Number-Game). I've changed quite a bit this time, the biggest thing being refactoring my JavaScript code into (mostly) jQuery. I've also added some little odds and ends, including the following, taken directly from my [Project Breakdown post](https://risclover.github.io/official-portfolio/blog/project_breakdown_number_game.html/):
     - The keyboard shortcut for the Reset button. Why is it 'd'? I don't know. I think it should instead be Shift + R.
     - Change the text color for when there is an error (make it red instead of allowing it to stay the same as it was previously)
-    - When testing my game just now, I realized that you can get the number 0. So I need to change the text that says "From 1 - 100" or "1 to 100" to say "0 - 100". I also want to add, "(Including 0 and 100).
+    - When testing my game just now, I realized that you can get the number 0. So I need to change the text that says "From 1 - 100" or "1 to 100" to say "0 - 100". I also want to add, "(Including 0 and 100)".
     - Throw an error when the player tries to submit an input with text
 
 ## Building This Project
