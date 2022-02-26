@@ -5,7 +5,7 @@
 1. [Introduction](#Introduction) (You are here)
 2. [Description](#Description)
 3. [Updates](#Updates)
-4. [Building This Project](#Building_This_Project)
+4. [Build]](#Build)
 5. [Links](#Links)
 
 ## Description
@@ -20,7 +20,7 @@ A game in which the player tries to guess the number - which is randomly chosen 
     - When testing my game just now, I realized that you can get the number 0. So I need to change the text that says "From 1 - 100" or "1 to 100" to say "0 - 100". I also want to add, "(Including 0 and 100)".
     - Throw an error when the player tries to submit an input with text
 
-## Building This Project
+## Build
 For a look into how I built this project, visit my Project Breakdown post on my blog: [Project Breakdown: The Number Game](https://risclover.github.io/official-portfolio/blog/project_breakdown_number_game.html/)
 
 ## Links
