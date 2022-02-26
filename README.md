@@ -1,5 +1,5 @@
 # Introduction
- A numbers guessing game
+ A numbers guessing game built with HTML, CSS, JavaScript, and jQuery.
 
 ### Table of Contents
 1. [Introduction](#Introduction) (You are here)
