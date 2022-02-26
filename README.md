@@ -15,3 +15,8 @@ Throw an error when the player tries to submit an input with text
 
 ## Building This Project
 For a look into how I built this project, visit my Project Breakdown post on my blog: [Project Breakdown: The Number Game](https://risclover.github.io/official-portfolio/blog/project_breakdown_number_game.html/)
+
+## Links
+- [Live URL](https://risclover.github.io/The-Number-Game/)
+- [Repository](https://www.github.com/Risclover/The-Number-Game/)
+- [Project Breakdown](https://risclover.github.io/official-portfolio/blog/project_breakdown_number_game.html/)
