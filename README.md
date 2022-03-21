@@ -5,8 +5,9 @@
 1. [Introduction](#introduction) (You are here)
 2. [Description](#description)
 3. [Updates](#updates)
-4. [Build](#build)
-5. [Links](#links)
+4. [Instructions](#instructions)
+5. [Build](#build)
+6. [Links](#links)
 
 ## Description
 ([Back to top ^](#introduction))
@@ -44,6 +45,21 @@ A game in which the player tries to guess the number - which is randomly chosen 
         TL;DR: The range is back to 1-100, and is actually from 1-100 instead of 0-99.
 
   -  An error that I <em>wasn't</em> aware of last time was that, when there is nothing in the input box and the player presses Guess (or Enter), the game treats it as a non-duplicable guess and appends an empty slash to the "guess board". After seeing that this time, I added the condition of an empty input box to the list of things that generates an error.
+
+## Instructions
+The Number Game is a number guessing game. You must try to guess the winning number, which is a randomly-generated number between 1 and 100. The game will help you out along the way by letting you know if your guess is too high or too low. Try to guess the number in the least amount of guesses as you can!
+
+1. Choose a number between 1 and 100 and use the input box to submit your guess. You can submit your guess by pressing the Guess button or by pressing Enter.
+2. Read the response the game gives you. There are 4 possible options:
+    1. **Too High**: Your guess was too high. Guess a lower number.
+    2. **Too Low**: Your guess was too low. Guess a higher number.
+    3. **Win**: You guessed the number correctly and won the game!
+    4. **Error**: You submitted an invalid guess. Make sure that:
+       1. The input box isn't empty.
+       2. Your guess is from 1 - 100 (including 1 and 100); numbers like 0, -5, and 101 are invalid.
+       3. Your guess doesn't include any non-digit characters (including letters and special characters).
+
+3. The game records your number of guesses and your previously-guessed numbers. Refer to this to avoid accidental duplicate guesses. (**Note**: The game only counts duplicate guesses as the first initial guess.)
 
 ## Build
 ([Back to top ^](#introduction))
