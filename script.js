@@ -8,7 +8,7 @@ function onlyUnique(value, index, self) {
 }
 
 $(document).ready(function() {
-    const number = Math.floor(Math.random() * 100)
+    const number = Math.floor(Math.random() * 100 + 1)
     $('#input').keydown(function(e) {
         if(e.which === 13) {
             e.preventDefault();
@@ -34,7 +34,7 @@ $(document).ready(function() {
 
     $('#submit').click(function() {
         let guessNum = $('#input').val();
-        if(($('#input').val() < number) && ($('#input').val() >= 0)) {
+        if(($('#input').val() < number) && ($('#input').val() > 0)) {
             guesses.push($('#input').val());
             $("#results").removeClass('high error').addClass('low').text("Your guess was too low! Try again.")
             $("<span class='low'> " + guessNum + " /</span>").appendTo($('#user2'));
@@ -42,7 +42,7 @@ $(document).ready(function() {
             $("#main").removeClass('regback highback errorback').addClass('lowback');
             $("#submit").removeClass('btnbackerror btnbackhigh').addClass('btnbacklow');
             $("#reset").removeClass('btnbackerror btnbackhigh').addClass('btnbacklow');
-        } else if (($("#input").val() > number) && ($("#input").val() >= 0) && ($("#input").val() < 101)) {
+        } else if (($("#input").val() > number) && ($("#input").val() > 0) && ($("#input").val() < 101)) {
             guesses.push($("#input").val());
             $("#results").removeClass('low error').addClass('high').text("Your guess was too high! Try again.");
             $("<span class='high'> " + guessNum + " /</span>").appendTo($('#user2'));            
@@ -62,8 +62,8 @@ $(document).ready(function() {
             $("#main").removeClass('regback errorback lowback highback').addClass('winback');
             $("#submit").removeClass('btnbackerror btnbacklow btnbackhigh').addClass('btnbackwin');
             $("#reset").removeClass('btnbackerror btnbacklow btnbackhigh').addClass('btnbackwin');
-        } else if ($('#input').val() < 0 || $('#input').val() > 100 || $('#input').val() === '' || $("#input").val() != (/\d+/ig)) {
-            $('#results').text("Please enter a number from 0 - 100.").addClass('error').removeClass('low high')
+        } else if ($('#input').val() <= 0 || $('#input').val() > 100 || $('#input').val() === '' || $("#input").val() != (/\d+/ig) || !$("#input").val() || $("#input").val().length === 0) {
+            $('#results').text("Please enter a number from 1 - 100.").addClass('error').removeClass('low high')
             $('#main').removeClass('regback lowback highback').addClass('errorback');
             $('#submit').removeClass('btnbacklow btnbackhigh submit').addClass('btnbackerror');
             $('#reset').removeClass('btnbacklow btnbackhigh reset').addClass('btnbackerror');

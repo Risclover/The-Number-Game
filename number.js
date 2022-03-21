@@ -42,6 +42,7 @@ function playRound() {
     let allSpans;
     let slash = document.createElement('span');
     slash.innerText = ' / ';
+    if(userGuess === )
     if (userGuess < number && userGuess > 0) {
         guesses.push(userGuess);
         result.classList.remove('high');
@@ -111,7 +112,7 @@ function playRound() {
         reset.classList.remove('btnbackhigh');
         submit.classList.add('btnbackwin');
         reset.classList.add('btnbackwin');
-    } else if (userGuess < 0 || userGuess > 100 || userGuess === '' || userGuess != (/\d+/ig)) {
+    } else if (userGuess < 0 || userGuess > 100 || userGuess === '' || userGuess != (/\d+/ig) || userGuess.value.length === 0) {
         result.textContent = "Please enter a number from 0 - 100."
         result.classList.add('error');
         result.classList.remove('low');
