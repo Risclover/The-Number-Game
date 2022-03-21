@@ -68,7 +68,7 @@ function playRound() {
         guesses.push(userGuess);
         result.classList.remove('low');
         result.classList.remove('error');
-        result.textContent = "Your guess was too high! Try again."
+        result.textContent = "Your guess was too high! Try again.";
         result.classList.add('high');
         newNum = document.createElement('span');
         newNum.classList.add('high');
