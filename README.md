@@ -49,6 +49,8 @@ A game in which the player tries to guess the number - which is randomly chosen 
   -  An error that I <em>wasn't</em> aware of last time was that, when there is nothing in the input box and the player presses Guess (or Enter), the game treats it as a non-duplicable guess and appends an empty slash to the "guess board". After seeing that this time, I added the condition of an empty input box to the list of things that generates an error.
 
 ## Instructions
+([Back to top ^](#introduction))
+
 The Number Game is a number guessing game. You must try to guess the winning number, which is a randomly-generated number between 1 and 100. The game will help you out along the way by letting you know if your guess is too high or too low. Try to guess the number in the least amount of guesses as you can!
 
 - Choose a number between 1 and 100 and use the input box to submit your guess. You can submit your guess by pressing the Guess button or by pressing Enter.
@@ -79,6 +81,11 @@ The Number Game is a number guessing game. You must try to guess the winning num
 ## Build
 ([Back to top ^](#introduction))
 
+Languages Used:
+- HTML
+- CSS
+- JavaScript, refactored into jQuery
+  
 For a look into how I built this project, visit my Project Breakdown post on my blog: [Project Breakdown: The Number Game](https://risclover.github.io/blog/Posts/project_breakdown_number_game.html)
 
 ## Links
