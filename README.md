@@ -1,6 +1,8 @@
 # Introduction
  A numbers guessing game built with HTML, CSS, JavaScript, and jQuery.
 
+ ![](number-game-screenshot-default.png)
+
 ### Table of Contents
 1. [Introduction](#introduction) (You are here)
 2. [Description](#description)
@@ -49,17 +51,30 @@ A game in which the player tries to guess the number - which is randomly chosen 
 ## Instructions
 The Number Game is a number guessing game. You must try to guess the winning number, which is a randomly-generated number between 1 and 100. The game will help you out along the way by letting you know if your guess is too high or too low. Try to guess the number in the least amount of guesses as you can!
 
-1. Choose a number between 1 and 100 and use the input box to submit your guess. You can submit your guess by pressing the Guess button or by pressing Enter.
-2. Read the response the game gives you. There are 4 possible options:
-    1. **Too High**: Your guess was too high. Guess a lower number.
-    2. **Too Low**: Your guess was too low. Guess a higher number.
-    3. **Win**: You guessed the number correctly and won the game!
-    4. **Error**: You submitted an invalid guess. Make sure that:
-       1. The input box isn't empty.
-       2. Your guess is from 1 - 100 (including 1 and 100); numbers like 0, -5, and 101 are invalid.
-       3. Your guess doesn't include any non-digit characters (including letters and special characters).
+- Choose a number between 1 and 100 and use the input box to submit your guess. You can submit your guess by pressing the Guess button or by pressing Enter.
+- Read the response the game gives you. There are 4 possible options:
+  - **Too High**: Your guess was too high. Guess a lower number.
+   
+    ![](number-game-screenshot-high.png)
 
-3. The game records your number of guesses and your previously-guessed numbers. Refer to this to avoid accidental duplicate guesses. (**Note**: The game only counts duplicate guesses as the first initial guess.)
+  - **Too Low**: Your guess was too low. Guess a higher number.
+  
+    ![](number-game-screenshot-low.png)
+  - **Win**: You guessed the number correctly and won the game!
+
+    ![](number-game-screenshot-win.png)
+  - **Error**: You submitted an invalid guess. Make sure that:
+    - The input box isn't empty.
+    - Your guess is from 1 - 100 (including 1 and 100); numbers like 0, -5, and 101 are invalid.
+    - Your guess doesn't include any non-digit characters (including letters and special characters).
+
+    ![](number-game-screenshot-error.png)
+
+  - The game records your number of guesses and your previously-guessed numbers. Refer to this to avoid accidental duplicate guesses. 
+  
+      ![](number-game-screenshot-guesses.png)
+
+    **Note**: The game only counts duplicate guesses one time total.
 
 ## Build
 ([Back to top ^](#introduction))
