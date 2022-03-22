@@ -1,4 +1,4 @@
-# Introduction
+# The Number Game: Introduction
  A numbers guessing game built with HTML, CSS, JavaScript, and jQuery.
 
  ![](number-game-screenshot-default.png)

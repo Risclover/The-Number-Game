@@ -69,8 +69,7 @@ $(document).ready(function() {
             $('#reset').removeClass('btnbacklow btnbackhigh reset').addClass('btnbackerror');
         }
         const space = "";
-        $('#input').val(space);
-        $('#input').text(space);
+        $('#input').val('');
         $('#user').appendTo($('#user2'));
         unique = guesses.filter(onlyUnique);
         counting.textContent = "Guesses: " + unique.length;

@@ -31,9 +31,6 @@ body, html {
 
 .header {
     margin-bottom: 20px;
-}
-
-.header {
     text-align: center;
 }
 
@@ -300,19 +297,15 @@ ul {
     margin-left: 20px;
 }
 
-a:visited {
-    color: rgb(0, 33, 220);
-}
-
 a {
     text-decoration: none;
     color:rgb(0, 33, 220);
+}
+a:visited {
+    color: rgb(0, 33, 220);
 }
 
 a:hover {
     color: rgb(6, 226, 230);;
     transition: color .3s ease-in-out;
 }
-
-
-
