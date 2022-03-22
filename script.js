@@ -26,7 +26,7 @@ $(document).ready(function() {
         if ($("#input").is(":disabled")) {
             location.reload();
         } else {
-            if (confirm("Are you sure that you want to reset the game?")) {
+            if (confirm("You're in the middle of a game! Are you sure that you want to start over?")) {
                 location.reload();
             } 
         }
